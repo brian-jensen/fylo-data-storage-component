@@ -109,6 +109,8 @@ body {
 .component aside {
   position: relative;
   padding: 32px;
+  font-size: 14px;
+  line-height: 16px;
   color: var(--color-secondary);
   background: var(--color-primary-bg);
   box-shadow: 0px 75px 100px -30px var(--color-primary-shadow);
@@ -224,4 +226,48 @@ meter::-moz-meter-bar {
   h1 svg path {
     fill: var(--color-white);
   }
+}
+
+
+@media (min-width: 64em) {
+
+  body {
+    background: var(--color-body-bg) url(../images/bg-desktop.png) no-repeat bottom -12px left/100% 420px;
+  }
+
+  .component {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .component section {
+    width: 350px;
+    margin: 0 30px 0 0;
+  }
+
+  .component aside {
+    height: 154px;
+    width: 540px;
+    padding: 40px;
+  }
+
+  .info {
+    top: 0;
+    right: 40px;
+    transform: translate(0, -65%);
+    border-bottom-right-radius: 0px;
+  }
+
+  .info::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 24px);
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 25px solid var(--color-white);
+    border-left: 25px solid transparent;
+  }
+
 }
