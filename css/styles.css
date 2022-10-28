@@ -1,0 +1,43 @@
+:root {
+  --font-primary: 'Raleway', sans-serif;
+  --color-body-bg: hsl(229, 57%, 11%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input, select, textarea, button {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  background: var(--color-body-bg);
+  font-family: var(--font-primary);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
